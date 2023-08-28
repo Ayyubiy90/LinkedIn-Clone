@@ -1,0 +1,99 @@
+/* Advanced Header Styling */
+.header {
+  background-color: #0a66c2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo h1:hover {
+  letter-spacing: 0.15em;
+  color: #fff;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .search input {
+    width: 100%;
+  }
+}
+
+/* Search Bar */
+.search {
+  position: relative;
+}
+
+.search input {
+  border: none;
+  border-radius: 20px;
+  padding: 12px 40px 12px 40px;
+  width: 65%;
+  transition: all 0.3s ease-in-out;
+}
+
+.search input:focus {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.search span {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+}
+
+/* Navigation Icons */
+.nav-icons span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-icons span:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Enhancement */
+.text-white {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Utility Classes */
+.hidden-sm {
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .hidden-sm {
+    display: none;
+  }
+}
+
+/* Header Button */
+.header-button {
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-button:hover {
+  background-color: #fff;
+  color: #0a66c2;
+}

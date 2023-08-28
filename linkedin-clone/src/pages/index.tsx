@@ -8,13 +8,17 @@ import ProfileSidebar from '../components/ProfileSidebar';
 
 const Home = () => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <Sidebar name={''} profession={''} />
-      <Feed />
-      <Footer />
       <Navbar />
-      <ProfileSidebar name={''} profileImage={''} coverImage={''} connections={0} headline={''} location={''} />
+
+      <main className="flex flex-grow">
+        <Sidebar name={''} profession={''} />
+        <Feed />
+        <ProfileSidebar name={''} profileImage={''} coverImage={''} connections={0} headline={''} location={''} />
+      </main>
+
+      <Footer />
     </div>
   );
 };

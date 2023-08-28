@@ -20,25 +20,25 @@ interface AdProps {
 
 const Post: React.FC<PostProps> = ({ content, author, timeAgo, image, video, comments }) => {
   return (
-    <div className="post bg-blue-100 rounded-lg p-4 mb-4">
-      <div className="post-header">
-        <span className="author">{author}</span>
-        <span className="time-ago">{timeAgo}</span>
+    <div className="post bg-white rounded-lg p-4 mb-4 shadow">
+      <div className="post-header flex justify-between">
+        <span className="author font-bold">{author}</span>
+        <span className="time-ago text-gray-500 text-sm">{timeAgo}</span>
       </div>
-      <p>{content}</p>
-      {image && <img src={image} alt={`${author}'s post`} />}
-      {video && <video src={video} controls />}
-      <div className="post-actions">
-        <button>Like</button>
-        <button>Comment</button>
-        <button>Share</button>
+      <p className="mt-2">{content}</p>
+      {image && <img src={image} alt={`${author}'s post`} className="rounded mt-2"/>}
+      {video && <video src={video} controls className="rounded mt-2"/>}
+      <div className="post-actions flex justify-between mt-4">
+        <button className="text-blue-500">Like</button>
+        <button className="text-blue-500">Comment</button>
+        <button className="text-blue-500">Share</button>
       </div>
       {comments && (
-        <div className="post-comments">
+        <div className="post-comments mt-4">
           {comments.slice(0, 2).map((comment, index) => (
-            <p key={index}>{comment}</p>
+            <p key={index} className="text-sm text-gray-600">{comment}</p>
           ))}
-          {comments.length > 2 && <button>See more comments</button>}
+          {comments.length > 2 && <button className="mt-2 text-blue-500">See more comments</button>}
         </div>
       )}
     </div>
@@ -47,7 +47,7 @@ const Post: React.FC<PostProps> = ({ content, author, timeAgo, image, video, com
 
 const Ad: React.FC<AdProps> = ({ content }) => {
   return (
-    <div className="ad bg-green-100 rounded-lg p-4 mb-4">
+    <div className="ad bg-green-200 rounded-lg p-4 mb-4 shadow">
       <p>{content}</p>
     </div>
   );
@@ -55,7 +55,7 @@ const Ad: React.FC<AdProps> = ({ content }) => {
 
 const TrendingTopic: React.FC<TrendingTopicProps> = ({ topic }) => {
   return (
-    <div className="trending-topic bg-yellow-100 rounded-lg p-4 mb-4">
+    <div className="trending-topic bg-yellow-200 rounded-lg p-4 mb-4 shadow">
       <p>{topic}</p>
     </div>
   );

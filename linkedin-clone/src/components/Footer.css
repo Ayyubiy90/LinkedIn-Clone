@@ -1,0 +1,102 @@
+/* Footer Styling */
+.footer {
+  background-color: #333;
+  color: #eee;
+  padding: 4rem 0;
+  transition: background-color 0.3s ease;
+}
+
+.footer:hover {
+  background-color: #444;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  .w-one-fourth {
+    min-width: 100%;
+    padding: 15px;
+  }
+}
+
+/* Flex Containers */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Footer Sections */
+.w-one-fourth {
+  flex: 1;
+  padding: 20px;
+  min-width: 200px;
+  transition: all 0.3s ease;
+}
+
+.w-one-fourth:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Titles and Lists */
+.text-lg {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+li:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Copyright Info */
+.text-center {
+  text-align: center;
+}
+
+/* Enhancements */
+.text-white {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Utility Classes */
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

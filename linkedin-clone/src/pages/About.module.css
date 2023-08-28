@@ -1,0 +1,32 @@
+/* About.module.css */
+
+.about-section {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f3f4f6;
+  }
+  
+  .about-header {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .about-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 15px;
+    }
+    .about-header {
+      font-size: 20px;
+    }
+    .about-text {
+      font-size: 14px;
+    }
+  }
+  

@@ -1,8 +1,9 @@
 import React from 'react';
+import './Navbar.css';  // Make sure this path is correct, and that Navbar.css contains the CSS code I provided earlier
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-blue-800 p-4 text-white">
+    <nav className="navbar bg-blue-800 p-4 text-white">
       <div className="container mx-auto flex items-center justify-between">
         
         {/* Logo Section */}

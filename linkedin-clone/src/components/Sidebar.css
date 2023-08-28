@@ -1,0 +1,164 @@
+/* General Styles */
+.bg-gray-100 {
+  background-color: #f4f4f4;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+/* Flexbox and Text Styles */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+/* Colors and Spacing */
+.text-gray-600 {
+  color: #718096;
+}
+
+.text-blue-600 {
+  color: #3182ce;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.space-y-1 {
+  --space-y-reverse: 0;
+  margin-top: calc(0.25rem * var(--space-y-reverse));
+  margin-bottom: calc(0.25rem * calc(1 - var(--space-y-reverse)));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(0.5rem * var(--space-y-reverse));
+  margin-bottom: calc(0.5rem * calc(1 - var(--space-y-reverse)));
+}
+
+/* Hover Effects */
+.hover\:text-blue-600:hover {
+  color: #3182ce;
+}
+
+/* Image Styles */
+.w-24 {
+  width: 6rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .text-2xl {
+    font-size: 1.25rem;
+  }
+}
+
+/* Transitions */
+a {
+  transition: color 0.3s ease-in-out;
+}
+
+/* Animations */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Assign the animation */
+.bg-gray-100 {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+/* Box Shadows */
+.hover\:shadow:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  background-color: #333;
+  color: #fff;
+}
+
+/*
+@font-face {
+  font-family: 'YourFontName';
+  src: url('./path/to/font.woff2') format('woff2');
+}
+*/
+
+.custom-font {
+  font-family: "CustomFont", sans-serif;
+}
+
+/* Interactive Elements */
+.link::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover::before {
+  transform: scaleX(1);
+}
+
+/* Responsive Font Sizes */
+.text-responsive {
+  font-size: calc(1rem + 0.5vw);
+}
+
+/* Active State */
+.active-link {
+  border-left: 2px solid blue;
+  color: blue;
+}

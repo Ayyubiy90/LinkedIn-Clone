@@ -1,4 +1,5 @@
 import React from 'react';
+import './ProfileSidebar.css';
 
 interface ProfileSidebarProps {
   name: string;
