@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet';
 import Footer from '../components/Footer';
-import '../styles/globals.css';
+import '../styles/styles.css';
 import { AppProps } from 'next/app';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {

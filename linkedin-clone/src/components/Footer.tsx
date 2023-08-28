@@ -32,21 +32,47 @@ const Footer: React.FC = () => {
         {/* New Content */}
         <div className="flex justify-around mt-8">
           <div>
-            <h3 className="text-lg font-semibold">New Section 1</h3>
+            <h3 className="text-lg font-semibold">Legal</h3>
             <ul>
-              <li>New Item 1</li>
-              <li>New Item 2</li>
+              <li>Terms of Service</li>
+              <li>Privacy Policy</li>
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold">New Section 2</h3>
+            <h3 className="text-lg font-semibold">Help Center</h3>
             <ul>
-              <li>New Item 3</li>
-              <li>New Item 4</li>
+              <li>FAQ</li>
+              <li>Support</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">Languages</h3>
+            <ul>
+              <li>English</li>
+              <li>French</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">Country</h3>
+            <ul>
+              <li>United States</li>
+              <li>Canada</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">Accessibility</h3>
+            <ul>
+              <li>Keyboard Shortcuts</li>
+              <li>Accessibility Statement</li>
             </ul>
           </div>
         </div>
 
+        {/* Copyright Info */}
+        <div className="text-center mt-8">
+          <p>Copyright © 2023 LinkedIn Clone. All rights reserved.</p>
+        </div>
+        
       </div>
     </footer>
   );

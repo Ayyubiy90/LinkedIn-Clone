@@ -20,20 +20,20 @@ const Navbar: React.FC = () => {
 
         {/* Nav Links */}
         <ul className="flex space-x-6">
-          <li className="hover:bg-blue-700 p-2 rounded-full cursor-pointer">
-            🏠<br />Home
+          <li className="hover:bg-blue-700 p-2 rounded-full cursor-pointer space-y-1">
+            <span>🏠</span><br />Home
           </li>
-          <li className="hover:bg-blue-700 p-2 rounded-full cursor-pointer">
-            👥<br />Network
+          <li className="hover:bg-blue-700 p-2 rounded-full cursor-pointer space-y-1">
+            <span>👥</span><br />Network
           </li>
-          <li className="hover:bg-blue-700 p-2 rounded-full cursor-pointer">
-            💼<br />Jobs
+          <li className="hover:bg-blue-700 p-2 rounded-full cursor-pointer space-y-1">
+            <span>💼</span><br />Jobs
           </li>
-          <li className="hover:bg-blue-700 p-2 rounded-full cursor-pointer">
-            💬<br />Messaging
+          <li className="hover:bg-blue-700 p-2 rounded-full cursor-pointer space-y-1">
+            <span>💬</span><br />Messaging
           </li>
-          <li className="hover:bg-blue-700 p-2 rounded-full cursor-pointer">
-            🙋<br />Me
+          <li className="hover:bg-blue-700 p-2 rounded-full cursor-pointer space-y-1">
+            <span>🙋</span><br />Me
           </li>
         </ul>
 

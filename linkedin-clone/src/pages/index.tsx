@@ -10,11 +10,11 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <Sidebar />
+      <Sidebar name={''} profession={''} />
       <Feed />
       <Footer />
       <Navbar />
-      <ProfileSidebar name={''} profileImage={''} connections={0} />
+      <ProfileSidebar name={''} profileImage={''} coverImage={''} connections={0} headline={''} location={''} />
     </div>
   );
 };
