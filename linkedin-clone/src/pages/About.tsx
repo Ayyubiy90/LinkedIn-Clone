@@ -1,6 +1,3 @@
-// About.tsx
-
-// External Dependencies
 import Image from 'next/image';
 import Head from 'next/head';
 import styles from './About.module.css'; // Import your styles here
